@@ -4,8 +4,13 @@ new Vue({
         counter: 0
     },
     computed: {
-        lessThanThree: function () {
+        lessThanThreeComputed: function () {
             return this.counter > 3 ? '3より上' : '3より下'
         }
-    }
+    },
+    // methods: {
+    //     lessThanThreeMethod: function () {
+    //         return this.counter > 3 ? '3より上' : '3より下'
+    //     }
+    // },
 })
