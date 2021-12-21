@@ -1,6 +1,11 @@
 new Vue({
     el: '#app',
     data: {
-        message:''
+        counter: 0
+    },
+    computed: {
+        lessThanThree: function () {
+            return this.counter > 3 ? '3より上' : '3より下'
+        }
     }
 })

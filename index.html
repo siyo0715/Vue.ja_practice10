@@ -9,8 +9,9 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="message">
-        <h1>{{ message }}</h1>
+        <p>{{ counter }}</p>
+        <button @click="counter += 1">+1</button>
+        <p>{{ lessThanThree }}</p>
     </div>
     <script src="main.js"></script>
 </body>
